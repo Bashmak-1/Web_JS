@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Навчальні матеріали</title>
+    <title>Навчальний Архів</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,19 +13,32 @@
     <div class="container">
         <h1>Мій Навчальний Архів</h1>
 
-        <div class="grid">
-            <a href="pr/" class="card" id="btn-pr">
-                <div class="icon">📘</div>
-                <h2>Pr</h2>
-                <p>Практичні роботи</p>
-            </a>
+        <section class="work-section">
+            <div class="section-header">
+                <span class="icon">📘</span>
+                <h2>Практичні роботи (Pr)</h2>
+            </div>
+            <div class="grid" id="pr-grid">
+                <a href="pr/pr1/index.html" class="card">
+                    <span class="num">1</span>
+                    <span class="label">Анкета</span>
+                </a>
 
-            <a href="lb/" class="card" id="btn-lb">
-                <div class="icon">🧪</div>
-                <h2>Lb</h2>
-                <p>Лабораторні роботи</p>
-            </a>
-        </div>
+                <div class="card disabled"><span>2</span></div>
+                <div class="card disabled"><span>3</span></div>
+            </div>
+        </section>
+
+        <section class="work-section">
+            <div class="section-header">
+                <span class="icon">🧪</span>
+                <h2>Лабораторні роботи (Lb)</h2>
+            </div>
+            <div class="grid" id="lb-grid">
+                <div class="card disabled"><span>1</span></div>
+                <div class="card disabled"><span>2</span></div>
+            </div>
+        </section>
     </div>
 
     <script src="script.js"></script>

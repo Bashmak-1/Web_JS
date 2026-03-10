@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("Сайт завантажено, JS підключено!");
+    console.log("Портал готовий до роботи!");
 
-    const cards = document.querySelectorAll('.card');
-
-    cards.forEach(card => {
+    // Логіка для карток, які ще не готові
+    const disabledCards = document.querySelectorAll('.card.disabled');
+    disabledCards.forEach(card => {
         card.addEventListener('click', (e) => {
-            const folderName = card.querySelector('h2').innerText;
-            console.log(`Перехід до папки: ${folderName}`);
+            e.preventDefault();
+            alert("Ця робота ще не додана до архіву.");
         });
     });
 });
