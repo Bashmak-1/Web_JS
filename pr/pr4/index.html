@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практична робота 4: Робота з DOM та подіями</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        /* Стилі для підказки, що елемент можна видалити */
+        #taskList li {
+            cursor: pointer;
+            padding: 8px;
+            margin-top: 5px;
+            background-color: #f4f4f4;
+            border-radius: 4px;
+            width: fit-content;
+            min-width: 200px;
+        }
+        #taskList li:hover {
+            background-color: #ffcccc; /* Зміна кольору при наведенні для імітації видалення */
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <h1>Практична робота №4: Робота з DOM та подіями</h1>
+    
+    <!-- Контейнер для to-do list -->
+    <div>
+        <input type="text" id="taskInput" placeholder="Введіть завдання">
+        <button id="addTask">Додати завдання</button>
+    </div>
+    <ul id="taskList"></ul>
+    
+    <script src="script.js"></script>
+</body>
+</html>
