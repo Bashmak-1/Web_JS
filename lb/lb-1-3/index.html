@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конструктор резюме</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Блок введення даних -->
+        <aside class="form-section">
+            <h2>Введіть ваші дані</h2>
+            <form id="resume-form">
+                <div class="form-group">
+                    <label>ПІБ:</label>
+                    <input type="text" id="name" required placeholder="Іван Іваненко">
+                </div>
+                <div class="form-group">
+                    <label>Вік:</label>
+                    <input type="number" id="age" required placeholder="25">
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" id="email" required placeholder="ivan@email.com">
+                </div>
+                <div class="form-group">
+                    <label>Телефон:</label>
+                    <input type="text" id="phone" required placeholder="+380991234567">
+                </div>
+                <div class="form-group">
+                    <label>Навички (через кому):</label>
+                    <input type="text" id="skills" required placeholder="JavaScript, HTML, CSS">
+                </div>
+                <div class="form-group">
+                    <label>Освіта (Заклад і спеціальність):</label>
+                    <input type="text" id="education" required placeholder="КПІ, Інженерія ПЗ">
+                </div>
+                <div class="form-group">
+                    <label>Досвід роботи (Компанія і посада):</label>
+                    <input type="text" id="experience" required placeholder="Google, Front-end Developer">
+                </div>
+                
+                <button type="submit" class="btn">Згенерувати резюме</button>
+                <button type="button" id="load-btn" class="btn btn-secondary">Завантажити збережене</button>
+            </form>
+        </aside>
+
+        <!-- Блок відображення резюме -->
+        <main class="resume-section">
+            <div id="resume-output" class="resume-paper">
+                <p class="placeholder-text">Ваше резюме з'явиться тут...</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
