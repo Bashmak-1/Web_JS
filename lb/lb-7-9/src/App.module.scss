@@ -1,0 +1,77 @@
+.gameContainer {
+  min-height: 100vh;
+  padding: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  transition: background-color 0.5s;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.leftPanel, .rightPanel {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.clickArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.mainButton {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  background: #ffaa00;
+  border: none;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  transition: transform 0.1s;
+
+  &:active {
+    transform: scale(0.95);
+  }
+  &:disabled {
+    background: #555;
+    cursor: not-allowed;
+  }
+}
+
+.upgradeItem {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  
+  button {
+    cursor: pointer;
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+    
+    &:disabled {
+      background: #888;
+    }
+  }
+}
+
+.warning {
+  color: #ff4444;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
