@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практична робота 5: Асинхронне програмування та API</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 10px 0;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        
+        /* Стилі для Завдання 3 */
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            max-height: 400px;
+        }
+
+        /* Стилі для Завдання 4 (Картка покемона згідно з вимогою викладача) */
+        .pokemon-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin-top: 20px;
+            border: 2px solid #f1c40f;
+        }
+        .pokemon-card img {
+            width: 150px;
+            height: 150px;
+            background-color: #f9f9f9;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .pokemon-card h2 {
+            text-transform: capitalize;
+            margin: 0 0 10px 0;
+        }
+        .pokemon-card p {
+            margin: 8px 0;
+            font-size: 16px;
+            color: #555;
+        }
+        .pokemon-card span.type {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 14px;
+            margin: 2px;
+            text-transform: capitalize;
+        }
+        .error {
+            color: #e74c3c;
+            font-weight: bold;
+            padding: 10px;
+            background: #fadbd8;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Практична робота №5: Робота з API</h1>
+
+    <!-- Завдання 3: Список користувачів -->
+    <h2>Завдання 3. JSONPlaceholder</h2>
+    <button id="loadUsers">Завантажити користувачів</button>
+    <pre id="usersOutput">Очікування даних...</pre>
+
+    <hr>
+
+    <!-- Завдання 4: PokeAPI -->
+    <h2>Завдання 4. PokeAPI (Стилізовано)</h2>
+    <button id="loadPokemon">Load Pokémon Data</button>
+    <!-- Викладач просив НЕ у <pre>, тому використовуємо <div> для картки -->
+    <div id="pokemonOutput"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
